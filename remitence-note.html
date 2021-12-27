@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity </title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"> -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.min.css" />
+</head>
+
+<body>
+
+    <div class="dashbaord-main">
+        <div class="leftSection wow fadeIn" data-wow-delay=".25s" id='leftSidebar'>
+            <!-- <div class="brand">
+                <img src="images/logo.png" alt="">
+            </div> -->
+            <div class="user-profile">
+                <div class="close-dashboard-sidebar">
+                    <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
+                </div>
+                <img src="images/company-logo-your-logo.png" alt="">
+            </div>
+            <nav class="sidenav">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="clarity:dashboard-solid-badged"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./transaction.html">
+                            <span class="iconify" data-icon="icon-park-outline:transaction"></span>
+                            view transaction
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./remitence-note.html">
+                            <span class="iconify" data-icon="clarity:heart-solid"></span>
+                            Remittance Note
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./reports.html">
+                            <span class="iconify" data-icon="icomoon-free:profile"></span>
+                            Reports
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="rightSection">
+            <div class="topbar">
+                <div class="fold" onclick='foldSidebar();'>
+                    <span class="iconify" data-icon="eva:menu-fill"></span>
+                </div>
+                <!-- <img src="images/logo.png" class="mobile-menu-logo"> -->
+                <div class="right-element">
+                    <div class="dropdown">
+                        <a href="#" class="btn dropdown-toggle profile-manage" role="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/profile.png">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                    data-icon="carbon:user-avatar"></span> Profile</a>
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                    data-icon="ion:log-out-outline"></span> Log Out</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dashboard-content">
+                <section class="profile purchase-status">
+                    <div class="title-section">
+                        <span class="iconify" data-icon="icomoon-free:profile"></span>
+                        <div class="mx-2">View Remitence Note </div>
+                    </div>
+                </section>
+                <section class="px-4">
+
+                    <div class="row my-2 ">
+                        <div class="col-md-12 my-3">
+                           <h6 class="fw-bold text-secondary"> Remittance Note Report</h6>
+                            <h6 class="border-bottom pb-3"><small class="text-muted">
+                                All remittance notes in the last 24 months with date, value and number of donations. You
+                                can click on a remittance number to see the donations in that remittance note. This
+                                report is only run on a daily basis.
+                            </small></h6>
+                        </div>
+                        <div class="col-md-12 my-3">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <form class="form-inline">
+                                        <div class="row">
+                                            <div class="col-md-5 d-flex align-items-center">
+                                                <div class="form-group d-flex mt-4">
+                                                    <input class="form-control" type="search" placeholder="Search"
+                                                        aria-label="Search">
+                                                    <button class="text-white btn-theme ml-1"
+                                                        type="submit">Search</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group my-2">
+                                                    <label for=""><small>Date From </small> </label>
+                                                    <input class="form-control mr-sm-2" type="date" placeholder="Search"
+                                                        aria-label="Search">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="form-group my-2">
+                                                    <label for=""><small>Date To </small> </label>
+                                                    <input class="form-control mr-sm-2" type="date" placeholder="Search"
+                                                        aria-label="Search">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                                    <div>
+                                        <button title="Download" class="my-2 btn btn-sm btn-info text-white">Download
+                                            PDF</button>
+                                        <button title="Download" class="my-2 btn btn-sm btn-secondary">Download
+                                            excel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-2 text-center">
+                            <div class="overflow">
+                                <table class="table table-custom shadow-sm bg-white">
+                                    <thead>
+                                        <tr>
+                                            <th>date</th> 
+                                            <th>Count </th>
+                                            <th>Remittance Note Number</th>
+                                            <th>Value </th>
+                                            <th>View donation </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>07-08-2021</td>
+                                            
+                                        <td>1</td>
+                                            <td>
+                                                0214578
+                                            </td>
+                                            <td>$124.0</td>
+                                            <td><a href=""class="btn btn-sm btn-info text-white">View Donation</a></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>07-08-2021</td>
+                                            
+                                        <td>1</td>
+                                            <td>
+                                                0214578
+                                            </td>
+                                            <td>$124.0</td>
+                                            <td><a href=""class="btn btn-sm btn-info text-white">View Donation</a></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>07-08-2021</td>
+                                            
+                                        <td>1</td>
+                                            <td>
+                                                0214578
+                                            </td>
+                                            <td>$124.0</td>
+                                            <td><a href=""class="btn btn-sm btn-info text-white">View Donation</a></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>07-08-2021</td>
+                                            
+                                        <td>1</td>
+                                            <td>
+                                                32453254
+                                            </td>
+                                            <td>$124.0</td>
+                                            <td><a href=""class="btn btn-sm btn-info text-white">View Donation</a></td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+    <footer class="py-3 ">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+
+                <div class=" flex-fill bd-highlight ">
+                    <ul class="m-0 text-white">
+                        <li class="list-style-none">+44 (0)xx xxxx 8xxxx</li>
+                        <li class="list-style-none">support@admin.com</li>
+                        <li class="list-style-none"> address goes here </li>
+                    </ul>
+                </div>
+                <div class="p-2 flex-fill bd-highlight">
+                    <img src="images/company-logo-your-logo.png" width="160px">
+                </div>
+                <div class="p-2 d-flex align-items-center footerContact">
+                    <a href="" class="mx-2 text-decoration-none text-white">Help</a>
+                    <a href="" class="mx-2 text-decoration-none text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="./js/iconify.min.js"></script>
+    <script src='./js/app.js'> </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>
