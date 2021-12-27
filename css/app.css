@@ -2782,7 +2782,8 @@ fieldset legend {
 
 @media (max-width: 600px) {
   .myChartDiv {
-    max-width: 300px;
+    max-width: 320px;
+    height: auto;
   }
 }
 /*# sourceMappingURL=app.css.map */
