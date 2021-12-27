@@ -2466,4 +2466,7 @@ fieldset {
 .myChartDiv {
    max-width:100%;
    height: 400px;
+   @media(max-width:600px){
+    max-width: 320px;
+   }
 }
