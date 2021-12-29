@@ -1197,19 +1197,20 @@ footer {
 
             }
 
-            .sub-item {
-              display: block !important;
-
-              li {
-                a {
-                  background: #efe6fd !important;
-
-                  &:hover {
-                    background: #43608b !important;
-                    color: #fff;
-
-                    .iconify {
-                      color: $white;
+            &.collaps{
+              .sub-item {
+                display: block !important;  
+                li {
+                  a {
+                    background: #efe6fd !important;
+  
+                    &:hover {
+                      background: #43608b !important;
+                      color: #fff;
+  
+                      .iconify {
+                        color: $white;
+                      }
                     }
                   }
                 }
@@ -1238,7 +1239,7 @@ footer {
               list-style: none;
 
               a {
-                padding: 12px;
+                padding: 12px 40px;
                 color: $txt;
                 display: block;
                 text-decoration: none;

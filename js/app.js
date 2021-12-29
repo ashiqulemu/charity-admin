@@ -9,6 +9,10 @@ function activeImpression(event) {
 
 }
 
+function closedrop(){  
+  event.target.parentElement.classList.toggle('collaps') ; 
+}
+
 
 function slide() {
   let sidebar = document.getElementById('sidebar');

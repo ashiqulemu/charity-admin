@@ -1375,20 +1375,20 @@ footer .social-sites li a .iconify {
   color: #fff;
 }
 
-.dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item {
+.dashbaord-main .leftSection .sidenav ul li.nav-item.active.collaps .sub-item {
   display: block !important;
 }
 
-.dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item li a {
+.dashbaord-main .leftSection .sidenav ul li.nav-item.active.collaps .sub-item li a {
   background: #efe6fd !important;
 }
 
-.dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item li a:hover {
+.dashbaord-main .leftSection .sidenav ul li.nav-item.active.collaps .sub-item li a:hover {
   background: #43608b !important;
   color: #fff;
 }
 
-.dashbaord-main .leftSection .sidenav ul li.nav-item.active .sub-item li a:hover .iconify {
+.dashbaord-main .leftSection .sidenav ul li.nav-item.active.collaps .sub-item li a:hover .iconify {
   color: #fff;
 }
 
@@ -1414,7 +1414,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item .sub-item li a {
-  padding: 12px;
+  padding: 12px 40px;
   color: #212121;
   display: block;
   text-decoration: none;
