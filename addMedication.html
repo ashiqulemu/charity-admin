@@ -174,12 +174,12 @@
     </script>
     <script>
         function removeRow(event) {
-            console.log(event.target.parentElement.parentElement.remove());
+            event.target.parentElement.parentElement.remove();
         }
         $(document).ready(function () {
 
             $(".add-row").click(function () {
-                var markup = "<tr style='position:realative;'> <td width = '200px' style='display:inline-flex;'> <div style='color: white;    padding: 5px;    background: red;    width: 25px;    display: flex;    align-items: center; margin-right:5px;   justify-content: center;    border-radius: 4px;   left: 4px;    top: 81px;' onclick='removeRow(event);' >X</div>  <select class='form-control'><option>napa</option><option>napa</option><option>napa</option></select></td> <td style='width:95px;'><input type='text' class='form-control' value=' '> </td> <td > <input style='min-width: 50px;' type='text' class='form-control' value=' '></td><td style='width:85px'> <input style='min-width: 50px;' type='text' class='form-control'></td></tr>";
+                var markup = "<tr style='position:realative;'> <td width = '200px' style='display:inline-flex;'> <div style='color: white;  user-select:none;  padding: 5px;    background: red;    width: 45px;    display: flex;    align-items: center; margin-right:5px;   justify-content: center;    border-radius: 4px;   left: 4px;    top: 81px;' onclick='removeRow(event);' >X</div>  <select class='form-control'><option>napa</option><option>napa</option><option>napa</option></select></td> <td style='width:95px;'><input type='text' class='form-control' value=' '> </td> <td > <input style='min-width: 50px;' type='text' class='form-control' value=' '></td><td style='width:85px'> <input style='min-width: 50px;' type='text' class='form-control'></td></tr>";
                 $("table #inner ").prepend(markup);
             });
 
