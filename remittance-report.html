@@ -87,48 +87,111 @@
                     <div class="title-section">
                         <span class="iconify" data-icon="et:wallet"></span>
                         <div class="mx-2">
-                            Reports
+                          Remitance Reports
                         </div>
                     </div>
                 </section>
                 <section class="px-4">
                     <div class="row my-3">
-                        <div class="col-md-12">
-                            <div class="card border-info border-4   border-end-0 border-top-0 border-bottom-0 p-4 shadow-sm d-flex flex-row align-items-center">
-                                <div class="flex-fill">
-                                    <h6 class="text-info fw-bold">Donor Annual Report</h6>
-                                    <p class="  mb-1 text-muted">
-                                        All donations over last 5 years including start date and latest date. This
-                                        report
-                                        is only run on a monthly basis.</p>
+                        <div class="col-md-12 mt-2 ">
+                           
+                            <div class="d-flex justify-content-between align-items-center flex-wrap">
+                                <div class="text-start fs-5 mb-4 px-2">
+                                    <p class="mb-1">Mr & Mrs. VHLT</p>
+                                    <p class="mb-1">Unknown </p>
+                                    <p class="mb-1">~</p>
                                 </div>
-                                <a href="" class=" text-decoration-none text-center px-3 btn btn-sm btn-secondary">View</a>
+                                <div class="text-start mb-1 flex-fill">
+                                   <form action="" class="d-flex justify-content-around align-items-center flex-wrap">
+                                    <div class="form-group my-2 mx-1 flex-fill">
+                                        <label for=""><small>Select Doner </small> </label>
+                                        <select name="" class="form-control">
+                                            <option value="">1</option>
+                                            <option value="">1</option>
+                                            <option value="">1</option>
+                                        </select>
+                                      </div> 
+                                    <div class="form-group my-2 mx-1 flex-fill">
+                                        <label for=""><small>Date From </small> </label>
+                                        <input class="form-control mr-sm-2" type="date" placeholder="Search" aria-label="Search"> 
+                                      </div> 
+                                    <div class="form-group my-2 mx-1 flex-fill">
+                                        <label for=""><small>Date To </small> </label>
+                                        <input class="form-control mr-sm-2" type="date" placeholder="Search" aria-label="Search"> 
+                                      </div> 
+                                    <div class="form-group my-2 mx-1 flex-fill">
+                                        <button class="text-white btn-theme ml-1 mt-4" type="submit">Search</button>
+                                    </div>
+                                   </form> 
+                                </div>
+                                <div class="text-start fs-8  mb-1">
+                                    <p class="mb-1 mt-3">12-Jan-22</p>  
+                                </div>
+                               
+                            </div>
+                            <div class="overflow mt-2">
+                                <h4 class="text-center my-3">STATEMENT</h4>
+                                <table class="table table-custom statement shadow-sm bg-white">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Description</th>
+                                            <th>Debit</th>
+                                            <th>Credit </th>
+                                            <th>Balance </th>
+                                            <th>Notes </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> </td>
+                                            <td> </td>
+                                            <td> </td>
+                                            <td>  </td>
+                                            <td>  1200  </td>
+                                            <td>Balance Brought Forward</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>02/11/2021 </td>
+                                            <td>Balance </td>
+                                            <td>£360.00  </td>
+                                            <td>  </td>
+                                            <td> -£360.00 </td>
+                                            <td>Balance Brought Forward</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>02/11/2021 </td>
+                                            <td>Balance </td>
+                                            <td>£360.00  </td>
+                                            <td>  </td>
+                                            <td> -£360.00 </td>
+                                            <td>
+                                                Acc: No: 471452; <br>
+                                                Voucher No:471452
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3"> </td>
+                                            <td>
+                                                <b> Total : </b>
+                                            </td>
+                                            <td> <b>1200 </b></td>
+                                            <td>  </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                                <h6 class="text-center my-4">
+                                    THANK YOU. Your account is now in credit and the statement is for your
+                                    information only.
+                                    </h6>
                             </div>
                         </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col-md-12">
-                            <div class="card border-info border-4   border-end-0 border-top-0 border-bottom-0 p-4 shadow-sm d-flex flex-row align-items-center">
-                                <div class="flex-fill">
-                                    <h6 class="text-info fw-bold">Standing Order Report</h6>
-                                    <p class="  mb-1 text-muted">
-                                        Table showing all active standing orders from donors with all the relevant details. This report is only run on a monthly basis in the first week of each month.</p>
-                                </div>
-                                <a href="" class=" text-decoration-none text-center px-3 btn btn-sm btn-secondary">View</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col-md-12">
-                            <div class="card border-info border-4   border-end-0 border-top-0 border-bottom-0 p-4 shadow-sm d-flex flex-row align-items-center">
-                                <div class="flex-fill">
-                                    <h6 class="text-info fw-bold">Remittance Note Report</h6>
-                                    <p class="  mb-1 text-muted">
-                                        All remittance notes in the last 24 months with date, value and number of donations. You can click on a remittance number to see the donations in that remittance note. This report is only run on a daily basis.</p>
-                                </div>
-                                <a href="" class=" text-decoration-none text-center px-3 btn btn-sm btn-secondary">View</a>
-                            </div>
-                        </div>
+
                     </div>
                 </section>
             </div>

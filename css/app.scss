@@ -2472,3 +2472,11 @@ fieldset {
     height: auto;
    }
 }
+
+.statement{
+  tbody{
+    tr{
+      border-bottom: 1px dashed #212529!important;
+    }
+  }
+}
