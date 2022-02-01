@@ -1379,6 +1379,15 @@ footer .social-sites li a .iconify {
   display: block !important;
 }
 
+.dashbaord-main .leftSection .sidenav ul li.nav-item.active.collaps .sub-item li.collaps a {
+  background-color: #5c82b9 !important;
+  color: #fff;
+}
+
+.dashbaord-main .leftSection .sidenav ul li.nav-item.active.collaps .sub-item li.collaps a .iconify {
+  color: #fff;
+}
+
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active.collaps .sub-item li a {
   background: #efe6fd !important;
 }

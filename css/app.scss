@@ -1201,6 +1201,15 @@ footer {
               .sub-item {
                 display: block !important;  
                 li {
+                  &.collaps{
+                    a{
+                      background-color: #5c82b9 !important;
+                      color :#fff;
+                      .iconify {
+                        color: $white;
+                      }
+                    }
+                  }
                   a {
                     background: #efe6fd !important;
   
