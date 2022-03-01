@@ -2824,6 +2824,8 @@ fieldset legend {
 
 .innerMenu a {
   margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
   background: #43608b;
   padding: 3px 13px;
   border: 1px solid #03a9f4;
@@ -2834,12 +2836,6 @@ fieldset legend {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   text-transform: capitalize;
-}
-
-@media (max-width: 650px) {
-  .innerMenu a {
-    margin-bottom: 7px;
-  }
 }
 
 .innerMenu a:hover {
