@@ -2799,4 +2799,52 @@ fieldset legend {
 .statement tbody tr {
   border-bottom: 1px dashed #212529 !important;
 }
+
+.innerMenu {
+  margin: 9px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 14px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+@media (max-width: 650px) {
+  .innerMenu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.innerMenu a {
+  margin-right: 20px;
+  background: #43608b;
+  padding: 3px 13px;
+  border: 1px solid #03a9f4;
+  border-radius: 15px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-transform: capitalize;
+}
+
+@media (max-width: 650px) {
+  .innerMenu a {
+    margin-bottom: 7px;
+  }
+}
+
+.innerMenu a:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  background: #69c5f2;
+}
 /*# sourceMappingURL=app.css.map */
